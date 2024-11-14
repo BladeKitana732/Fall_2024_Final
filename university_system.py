@@ -2,6 +2,7 @@
 from student import Student
 from faculty import Faculty
 from course import Course
+import csv
 
 class UniversitySystem: 
     #attributes 
