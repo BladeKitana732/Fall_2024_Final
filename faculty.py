@@ -15,4 +15,5 @@ class Faculty:
     
     def __str__(self):
         #returns a str representation of the Faculty instance 
-        pass
+        title = ", ".join([course.title for course in self.courses])
+        return f"Faculty: {self.first_name {self.last_name}, Courses: [{title}]}"

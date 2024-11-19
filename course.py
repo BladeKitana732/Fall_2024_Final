@@ -13,4 +13,5 @@ class Course:
     
     def __str__(self):
         #returns a string representation of Course instance 
-        pass 
+        faculty_name = f"{self.faculty.first_name} {self.faculty.last_name}" if self.faculty else "None"
+        return f"Course: {self.title}, Faculty: {faculty_name}"
