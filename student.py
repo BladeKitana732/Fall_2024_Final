@@ -1,33 +1,23 @@
 #student class 
-from course import Course
-
 class Student:
     #attributes 
-    def __init__(self, first_name, last_name, courses):
+    def __init__(self, first_name, last_name):
         first_name = self.first_name 
         last_name = self.last_name 
         courses = []
 
     #methods 
-    def enroll(courses):
-        if len(courses) <= 1 and courses[0] != "Intro to Python": 
-            courses.append("Intro to Python")
-            print(courses)
-        elif len(courses) == 1 and courses[0] == "Intro to Python":
-            courses.append(Course)
-            print(courses)
-        elif len(courses) >= 1 and courses[0] == "Intro to Python": 
-            courses.append(Course)
-            print(courses)
-        elif len(courses) == 2 and courses[0] == "Intro to Python":
-            courses.append(Student)
-            print(courses)
-        elif len(courses) == 3 and courses[0] == "Intro to Python":
-            courses.append(Course)
-            print("You have reached the max number of courses able to join", courses)
+    def enroll(self, course):
+        #enrolls student if not already enrolled 
+        if course not in self.courses: 
+            self.courses.append(course)
 
-    def get_info():
-        print("test")
+    def get_info(self):
+        #returns the information about student and their courses combining first and last name together and joining returning a list of name and course_names
+        student_name = f"{self.first_name} {self.last_name}"
+        course_names = ', '.join("test")
+        return [student_name, course_names]
 
-student_dictionary = {} #needed to help store the key value pairs of id to student 
+
+
 

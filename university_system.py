@@ -7,7 +7,7 @@ import csv
 class UniversitySystem: 
     #attributes 
     def __init__(self, students, faculties, courses):
-        students = Student.get_info()
+        students = Student.students.append(students)
         faculties = Faculty.assign_course()
         courses = Course.get_info()
 
@@ -23,5 +23,4 @@ class UniversitySystem:
 
     def save_students_to_csv(filename = "students.csv"):
         print("test")
-
 

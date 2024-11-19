@@ -1,6 +1,4 @@
 #courses class 
-from faculty import Faculty
-
 class Course: 
     #attributes 
     def __init__(self, course_name, faculty):
@@ -8,5 +6,5 @@ class Course:
         faculty = None #was advised on requirements to set this to None initially 
 
     #methods 
-    def get_info(course):
-        pass #need to return a dictionary here with course name and assigned faculty name or "None if no faculty assigned"
+    def get_info(self): #needed to self to return information about course and its assigned faculy; still need a dictionary 
+        pass
