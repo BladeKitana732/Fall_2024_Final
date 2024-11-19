@@ -8,7 +8,5 @@ class Faculty:
         courses = []
 
     #method 
-    def assign_course(course): #also will need a dictionary here for key pair value of teacher name to course 
-        print("test")
-
-    
+    def assign_course(course): #also will need a dictionary here for key pair value of teacher name to course
+        pass
