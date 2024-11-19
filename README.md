@@ -12,3 +12,5 @@ The project will be divided into four separate modules:
   Course: Represents university courses and assigned faculty.
   University System: Main system class to manage all functionalities, using methods to add and manage          students, faculty, and courses, and to save student data in a CSV file.
   The main program (main.py) will integrate all these modules and provide a sample flow of operations.
+11/19/2024
+  utilizing help from the following youtube link: https://www.youtube.com/watch?v=JeznW_7DlB0&t=1555s while working on project 
