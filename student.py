@@ -15,8 +15,12 @@ class Student:
     def get_info(self):
         #returns the information about student and their courses combining first and last name together and joining returning a list of name and course_names
         student_name = f"{self.first_name} {self.last_name}"
-        course_names = ', '.join("test")
+        course_names = ', '.join([course.title for course in self.courses])
         return [student_name, course_names]
+    
+    def __str__(self):
+        #returns info in string of Student instance 
+        return f"Student: {self.first_name} {self.last_name}, Courses: [{', '.join([course.title for course in self.courses])}]"
 
 
 
