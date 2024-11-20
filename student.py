@@ -12,7 +12,7 @@ class Student:
         if course not in self.courses: 
             self.courses.append(course)
 
-    def get_info(self):
+    def get_info(self, student_name, course_names):
         #returns the information about student and their courses combining first and last name together and joining returning a list of name and course_names
         student_name = f"{self.first_name} {self.last_name}"
         course_names = ', '.join([course.title for course in self.courses])

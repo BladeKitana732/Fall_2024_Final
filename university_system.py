@@ -14,17 +14,17 @@ class UniversitySystem:
     #methods 
     def add_student(self, first_name, last_name): 
         #adds a student object to the list of students 
-        student = Student(self, first_name = str, last_name = str)
+        student = Student.get_info(first_name, last_name)
         self.students.append(student)
 
     def add_faculty(self, first_name, last_name):
         #adds faculty object to list of faculties 
-        faculty = Faculty(self, first_name = str, last_name = str)
+        faculty = Faculty.assign_course(course = [])
         self.faculties.append(faculty)
 
-    def add_course(self, course_name):
+    def add_course(self, title):
         #add course object to list of courses
-        course = Course(title = str)
+        course = Course.get_info(title)
         self.courses.append(title)
 
 
