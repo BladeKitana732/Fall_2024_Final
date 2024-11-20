@@ -18,11 +18,22 @@ class UniversitySystem:
         self.students.append(student)
 
     def add_faculty(self, first_name, last_name):
-        print("test")
+        #adds faculty object to list of faculties 
+        faculty = Faculty(self, first_name = str, last_name = str):
+        self.faculties.append(faculty)
 
     def add_course(self, course_name):
-        print("test")
+        #add course object to list of courses
+        course = Course(title = str)
+        self.courses.append(title)
+
 
     def save_students_to_csv(self, filename = "students.csv"):
-        print("test")
+        #saves each students name and enrolled courses to csv file 
+        with open(filename, mode = "w", newline = '') as file: 
+            writer = csv.writer(file)
+            writer.writerow(["Student Name", "Enrolled Courses"])
+            for student in self.students:
+                info = student.get_info()
+                writer.writerow(info)
 
