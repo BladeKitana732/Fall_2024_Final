@@ -7,7 +7,7 @@ class Faculty:
         courses = []
 
     #method 
-    def assign_course(self, course): #also will need a dictionary here for key pair value of teacher name to course
+    def assign_course(self, first_name, last_name, course): #also will need a dictionary here for key pair value of teacher name to course
         #assigns a course to faculty member and sets the course modules faculty attribute 
         if course not in self.courses: 
             self.courses.append(course)
@@ -15,5 +15,5 @@ class Faculty:
     
     def __str__(self):
         #returns a str representation of the Faculty instance 
-        title = ", ".join([course.title for course in self.courses])
-        return f"Faculty: {self.first_name} {self.last_name}, Courses: [{title}]"
+        courses = ", ".join([course.title for course in self.courses])
+        return f"Faculty: {self.first_name} {self.last_name}, Courses: [{courses}]"

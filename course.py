@@ -6,7 +6,7 @@ class Course:
         faculty = None #was advised on requirements to set this to None initially 
 
     #methods 
-    def get_info(self): #needed to self to return information about course and its assigned faculy; still need a dictionary 
+    def get_info(self, faculty, title): #needed to self to return information about course and its assigned faculy; still need a dictionary 
         #returns info about the course and assigned faculty 
         faculty_name = f"{self.faculty.first_name} {self.faculty.last_name}" if self.faculty else "None"
         return {"Course Name:" : self.title, "Faculty:" : faculty_name}

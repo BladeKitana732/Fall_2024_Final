@@ -4,12 +4,12 @@ from university_system import UniversitySystem
 #input hardcoded approx 3 students and 3 faculty 
 def main():
     #this code creates the UniversitySystem module instance 
-    uni_sys = UniversitySystem(students = [], faculties = [], courses = [])
+    uni_sys = UniversitySystem(students = {}, faculties = {}, courses = {})
 
     #adding students 
-    s1 = uni_sys.add_student("Teresa", "Malave")
-    s2 = uni_sys.add_student("Nory", "Ramos")
-    s3 = uni_sys.add_student("Bill", "Walton")
+    s1 = uni_sys.add_student("Teresa", "Malave", [])
+    s2 = uni_sys.add_student("Nory", "Ramos", [])
+    s3 = uni_sys.add_student("Bill", "Walton", [])
 
     #adding faculty 
     f1 = uni_sys.add_faculty("John", "Evers")

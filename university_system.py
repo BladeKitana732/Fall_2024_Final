@@ -16,11 +16,13 @@ class UniversitySystem:
         #adds a student object to the list of students 
         student = Student.get_info(first_name, last_name)
         self.students.append(student)
+        return student
 
-    def add_faculty(self, first_name, last_name):
+    def add_faculty(self, first_name, last_name, course):
         #adds faculty object to list of faculties 
-        faculty = Faculty.assign_course(course = [])
+        faculty = Faculty.assign_course(first_name, last_name)
         self.faculties.append(faculty)
+        
 
     def add_course(self, title):
         #add course object to list of courses
